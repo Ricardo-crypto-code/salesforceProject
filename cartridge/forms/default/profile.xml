@@ -20,6 +20,26 @@
 			type="string" />
 
 		<field
+			formid="CPFRicardo" 
+			label="label.input.CPFRicardo.profile" 
+			mandatory="true" 
+			max-length="14" 
+			missing-error="error.message.required"
+			parse-error="error.message.parse.CPFRicardo.profile.form"
+			range-error="error.message.11orless"
+			value-error="ValueErrorText"
+			type="string"/> 
+
+		<field
+			formid="birthday" 
+			label="label.input.birthday.profile" 
+			mandatory="true" 
+			max-length="10" 
+			missing-error="error.message.required"
+			range-error="error.message.10orless"
+			type="string"/> 
+				
+		<field 
 			formid="email" 
 			label="label.input.email.profile" 
 			mandatory="true" 
