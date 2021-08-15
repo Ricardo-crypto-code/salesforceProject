@@ -31,6 +31,24 @@
 			type="string"/> 
 
 		<field
+			formid="gender" 
+			label="label.input.gender.profile" 
+			mandatory="true" 
+			binding="gender" 
+			missing-error="error.message.required"
+			type="interger" /> 
+
+		<field
+			formid="cep" 
+			label="label.input.cep.profile" 
+			mandatory="true" 
+			max-length="11" 
+			missing-error="error.message.required"
+			range-error="error.message.50orless"
+			type="string" /> 
+
+
+		<field
 			formid="birthday" 
 			label="label.input.birthday.profile" 
 			mandatory="true" 
