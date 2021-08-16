@@ -79,7 +79,7 @@
             data-missing-error="${Resource.msg('error.message.required','forms',null)}"
             data-range-error="${Resource.msg('error.message.12orless','forms',null)}"
             aria-describedby="form-gender-error"
-            placeholder="Gender"
+            placeholder="gender"
             <isprint value=${pdict.profileForm.customer.gender.attributes} encoding="off" />>
              <option value=0>Undefine</option>
              <option value=1>Male</option>

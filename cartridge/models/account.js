@@ -15,7 +15,10 @@ function getProfile(profile) {
     var CustomerMgr = required('dw/customer/CustomerMgr')
     var profileCustom = CustomerMgr.getCustomerByLogin(profile.email)
 
-    profileCustom = profileCustom.getProfile();
+    if(profileCustom!= null){
+          profileCustom = profileCustom.getProfile();
+
+    }
 
 
     if (profile) {
@@ -23,9 +26,12 @@ function getProfile(profile) {
             firstName: profile.firstName,
             lastName: profile.lastName,
             cpf: profileCustom.custom.cpfRicardo,
+            birthday: profile.birthday,
+            gender: profile.gender,
+            cep: profileCustom.custom.cepRicardo,
             state: profileCustom.custom.stateRicardo,
             city: profileCustom.custom.cityRicardo,
-            Address: profileCustom.custom.AddressRicardo,
+            Address: profileCustom.custom.addressRicardo,
             email: profile.email,
             phone: Object.prototype.hasOwnProperty.call(profile, 'phone') ? profile.phone : profile.phoneHome,
             password: '********'
