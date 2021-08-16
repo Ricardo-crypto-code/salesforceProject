@@ -216,6 +216,13 @@ server.post(
         var registrationFormObj = {
             firstName: registrationForm.customer.firstname.value,
             lastName: registrationForm.customer.lastname.value,
+            cpf: registrationForm.customer.cpf.value,
+            birthday: registrationForm.customer.birthday.value,
+            gender: registrationForm.customer.gender.value,
+            cep: registrationForm.customer.cep.value,
+            State: registrationForm.customer.State.value,
+            city: registrationForm.customer.city.value,
+            address: registrationForm.customer.address.value,
             phone: registrationForm.customer.phone.value,
             email: registrationForm.customer.email.value,
             emailConfirm: registrationForm.customer.emailconfirm.value,
@@ -262,8 +269,15 @@ server.post(
                                 // assign values to the profile
                                 var newCustomerProfile = newCustomer.getProfile();
 
-                                newCustomerProfile.firstName = registrationForm.firstName;
+                                newCustomerProfile.firstName = registrationForm.firstName;                            
                                 newCustomerProfile.lastName = registrationForm.lastName;
+                                newCustomerProfile.custom.cpfRicardo= registrationForm.cpf;
+                                newCustomerProfile.birthday= registrationForm.birthday;
+                                newCustomerProfile.gender= registrationForm.gender;
+                                newCustomerProfile.custom.cepRicardo= registrationForm.cep;
+                                newCustomerProfile.custom.StateRicardo= registrationForm.State;
+                                newCustomerProfile.custom.cityRicardo= registrationForm.city;
+                                newCustomerProfile.custom.addressRicardo= registrationForm.address;
                                 newCustomerProfile.phoneHome = registrationForm.phone;
                                 newCustomerProfile.email = registrationForm.email;
                             }

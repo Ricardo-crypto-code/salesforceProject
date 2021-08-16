@@ -20,12 +20,12 @@
 			type="string" />
 
 		<field
-			formid="CPFRicardo" 
-			label="label.input.CPFRicardo.profile" 
+			formid="cpfRicardo" 
+			label="label.input.cpfRicardo.profile" 
 			mandatory="true" 
 			max-length="14" 
 			missing-error="error.message.required"
-			parse-error="error.message.parse.CPFRicardo.profile.form"
+			parse-error="error.message.parse.cpfRicardo.profile.form"
 			range-error="error.message.11orless"
 			value-error="ValueErrorText"
 			type="string"/> 
@@ -45,7 +45,34 @@
 			max-length="11" 
 			missing-error="error.message.required"
 			range-error="error.message.50orless"
+			type="number" /> 
+		
+		<field
+			formid="state" 
+			label="label.input.state.profile" 
+			mandatory="true" 
+			max-length="50" 
+			missing-error="error.message.required"
+			range-error="error.message.50orless"
 			type="string" /> 
+		
+		<field
+			formid="city" 
+			label="label.input.city.profile" 
+			mandatory="true" 
+			max-length="50" 
+			missing-error="error.message.required"
+			range-error="error.message.50orless"
+			type="string" />
+
+		<field
+			formid="address" 
+			label="label.input.address.profile" 
+			mandatory="true" 
+			max-length="50" 
+			missing-error="error.message.required"
+			range-error="error.message.50orless"
+			type="string" />  
 
 
 		<field
